@@ -1,26 +1,71 @@
-REPOSITÓRIO DO GRUPO RED HOT CHILLI TOKENS
+# Nome do Projeto
 
-# README
+Breve descrição do seu projeto.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Pré-requisitos
 
-Things you may want to cover:
+Antes de iniciar, certifique-se de ter instalado em sua máquina:
 
-* Ruby version
+- Ruby 3.0.6
+- PostgreSQL
+- Node.js e npm
+- Truffle (via npm)
 
-* System dependencies
+## Configuração do Ambiente
 
-* Configuration
+### Instalação do Ruby
 
-* Database creation
+Certifique-se de ter o Ruby 3.0.6 instalado. Você pode verificar a versão do Ruby com o comando:
 
-* Database initialization
+ruby -v
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+Se necessário, instale o Ruby 3.0.6 usando [rbenv](https://github.com/rbenv/rbenv) ou [RVM](https://rvm.io).
 
-* Deployment instructions
+### Configuração do PostgreSQL
 
-* ...
+Certifique-se de que o PostgreSQL está instalado e rodando em sua máquina. Crie um banco de dados para o projeto e configure as credenciais de acesso no arquivo de configuração do projeto.
+
+### Instalação do Node.js e npm
+
+Instale o Node.js e npm (Node Package Manager) seguindo as instruções em [nodejs.org](https://nodejs.org/).
+
+### Instalação do Truffle
+
+Com o Node.js e npm instalados, instale o Truffle globalmente:
+
+npm install -g truffle
+
+
+## Configuração do Projeto
+
+### Instalação das Dependências do Ruby
+
+Instale as dependências do Ruby especificadas no Gemfile:
+
+bundle install
+
+
+### Configuração do Truffle
+
+Navegue até a pasta `truffle_projects`:
+
+cd truffle_projects
+
+
+Instale as dependências do projeto Truffle:
+
+npm install
+
+
+## Inicialização do Projeto
+
+Após concluir as configurações:
+
+1. Inicie o servidor do Ruby (Rails, Sinatra, etc.), dependendo do seu framework.
+2. Execute as migrações do banco de dados, se necessário.
+3. Inicie outros serviços necessários, como o Truffle, se aplicável.
+
+## Contribuição
+
+Instruções para contribuir para o projeto.
