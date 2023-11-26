@@ -17,8 +17,7 @@ Antes de iniciar, certifique-se de ter instalado em sua máquina:
 
 Certifique-se de ter o Ruby 3.0.6 instalado. Você pode verificar a versão do Ruby com o comando:
 
-ruby -v
-
+`ruby -v`
 
 Se necessário, instale o Ruby 3.0.6 usando [rbenv](https://github.com/rbenv/rbenv) ou [RVM](https://rvm.io).
 
@@ -34,7 +33,7 @@ Instale o Node.js e npm (Node Package Manager) seguindo as instruções em [node
 
 Com o Node.js e npm instalados, instale o Truffle globalmente:
 
-npm install -g truffle
+`npm install -g truffle`
 
 
 ## Configuração do Projeto
@@ -43,19 +42,19 @@ npm install -g truffle
 
 Instale as dependências do Ruby especificadas no Gemfile:
 
-bundle install
+`bundle install`
 
 
 ### Configuração do Truffle
 
 Navegue até a pasta `truffle_projects`:
 
-cd truffle_projects
+`cd truffle_projects`
 
 
 Instale as dependências do projeto Truffle:
 
-npm install
+`npm install`
 
 
 ## Inicialização do Projeto
