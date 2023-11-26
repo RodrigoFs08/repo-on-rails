@@ -19,7 +19,7 @@ Certifique-se de ter o Ruby 3.0.6 instalado. Você pode verificar a versão do R
 
 `ruby -v`
 
-Se necessário, instale o Ruby 3.0.6 usando [rbenv](https://github.com/rbenv/rbenv) ou [RVM](https://rvm.io).
+Para Windows, instale o Ruby 3.0.6 usando [RubyInstaller](https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-3.0.6-1/rubyinstaller-devkit-3.0.6-1-x64.exe)
 
 ### Configuração do PostgreSQL
 
@@ -57,14 +57,23 @@ Instale as dependências do projeto Truffle:
 `npm install`
 
 
-## Inicialização do Projeto
+
+## Inicialização do Projeto Rails
 
 Após concluir as configurações:
 
-1. Inicie o servidor do Ruby (Rails, Sinatra, etc.), dependendo do seu framework.
-2. Execute as migrações do banco de dados, se necessário.
-3. Inicie outros serviços necessários, como o Truffle, se aplicável.
+1. Volte para a raiz do seu projeto Rails (se você estiver na pasta `truffle projects`, use `cd ..`).
+2. Execute as migrações do banco de dados:
+
+    `rails db:create db:migrate`
+
+3. Inicie o servidor Rails com:
+
+    `rails server`
+
+4. Acesse o aplicativo no navegador em `http://localhost:3000`.
 
 ## Contribuição
 
 Instruções para contribuir para o projeto.
+
