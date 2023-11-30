@@ -45,7 +45,7 @@
 // const { MNEMONIC, PROJECT_ID } = process.env;
 
 const HDWalletProvider = require('@truffle/hdwallet-provider');
-const mnemonic = 'buffalo vibrant cloth hundred milk shift record cry abandon betray allow double';
+const mnemonic = 'income affair civil rally exist mix biology bid anger fuel possible reflect';
 
 module.exports = {
   /**

@@ -1,15 +1,17 @@
 Trestle.resource(:wallets) do
   menu do
-    item :wallets, icon: "fa fa-star"
+    item :wallets, icon: "fa fa-money-bill-alt", label: I18n.t("sidebar.wallets")
   end
 
   # Customize the table columns shown on the index view.
   #
-  # table do
-  #   column :name
-  #   column :created_at, align: :center
-  #   actions
-  # end
+  table do
+    column :user, header: I18n.t("wallets.fields.user")
+    column :address, header: I18n.t("wallets.fields.address")
+    column :created_at, align: :center, header: I18n.t("common.created_at") do |wallet|
+      wallet.created_at.strftime("%d/%m/%Y %H:%M")
+    end
+  end
 
   # Customize the form fields shown on the new/edit views.
   #

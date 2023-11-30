@@ -6,7 +6,7 @@ namespace :ethereum do
   desc "Get current Ethereum block number"
   task get_block_number: :environment do
     begin
-      client = Eth::Client.create "http://127.0.0.1:7545"
+      client = Eth::Client.create "http://127.0.0.1:8545"
       block_number = client.eth_block_number
       puts block_number["result"].to_i(16)
     rescue => e

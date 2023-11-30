@@ -3,17 +3,17 @@ Trestle.configure do |config|
   #
   # Set the page title shown in the main header within the admin.
   #
-  config.site_title = "D App Chilli Tokens"
+  config.site_title = "Portal Compromissadas"
 
   # Specify a custom image to be used in place of the site title for mobile and
   # expanded/desktop navigation. These images should be placed within your
   # asset paths, e.g. app/assets/images.
   #
-  # config.site_logo = "logo.png"
+  config.site_logo = "https://i.ibb.co/dcTLwgD/Imagem-do-Whats-App-de-2023-11-28-s-12-56-52-9da07886-removebg-preview.png"
 
   # Specify a custom image to be used for the collapsed/tablet navigation.
   #
-  # config.site_logo_small = "logo-small.png"
+  config.site_logo_small = "https://i.ibb.co/dcTLwgD/Imagem-do-Whats-App-de-2023-11-28-s-12-56-52-9da07886-removebg-preview.png"
 
   # Specify a favicon to be used within the admin.
   #

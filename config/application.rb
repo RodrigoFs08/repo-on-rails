@@ -6,7 +6,13 @@ require "rails/all"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module DAppChilliTokens
+# Allow get env variables from dotenv file
+if Rails.env.development? || Rails.env.test?
+  require "dotenv"
+  Dotenv.load
+end
+
+module RepoOnRails
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0

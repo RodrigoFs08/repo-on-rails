@@ -1,21 +1,30 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.20;
+pragma solidity >=0.4.22 <0.9.0;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
-import "@openzeppelin/contracts/access/AccessControl.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract DREXToken is ERC20, AccessControl {
-    bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
+contract DREXToken is ERC20, Ownable {
+    address private authorizedWallet;
 
-    constructor(address strAddress) ERC20("DREX Token", "DREX") {
-        _grantRole(MINTER_ROLE, strAddress);
+    constructor(string memory name, string memory symbol)
+        ERC20(name, symbol)
+        Ownable(msg.sender)
+    {
     }
 
-    function mint(address to, uint256 amount) public onlyRole(MINTER_ROLE) {
+    function setAuthorizedWallet(address _wallet) public onlyOwner {
+        authorizedWallet = _wallet;
+    }
+
+    function mint(address to, uint256 amount) public {
+        require(msg.sender == owner() || msg.sender == authorizedWallet, "Not authorized");
         _mint(to, amount);
     }
 
-    function burn(address from, uint256 amount) public onlyRole(MINTER_ROLE) {
+    function burn(address from, uint256 amount) public {
+        require(msg.sender == owner() || msg.sender == authorizedWallet, "Not authorized");
         _burn(from, amount);
     }
 }
+

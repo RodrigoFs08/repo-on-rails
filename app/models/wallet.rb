@@ -1,6 +1,6 @@
 class Wallet < ApplicationRecord
   belongs_to :user
-
+  encrypts :private_key
   # Validações (opcional)
   validates :address, presence: true, uniqueness: true
   validates :private_key, presence: true
