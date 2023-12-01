@@ -6,14 +6,10 @@ contract("TPFtToken", (accounts) => {
 
     beforeEach(async () => {
         tpftToken = await TPFtToken.new("Your_URI");
+        await tpftToken.setAuthorizedWallet(admin);
+
     });
 
-    it("deve atribuir as roles DEFAULT_ADMIN_ROLE e MINTER_ROLE ao criador do contrato", async () => {
-        const isAdmin = await tpftToken.hasRole(await tpftToken.DEFAULT_ADMIN_ROLE(), admin);
-        const isMinter = await tpftToken.hasRole(await tpftToken.MINTER_ROLE(), admin);
-        assert(isAdmin, "O criador do contrato não tem a role DEFAULT_ADMIN_ROLE");
-        assert(isMinter, "O criador do contrato não tem a role MINTER_ROLE");
-    });
 
     it("deve permitir que um minter cunhe tokens", async () => {
         const id = 1;

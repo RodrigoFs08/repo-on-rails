@@ -7,11 +7,8 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 contract DREXToken is ERC20, Ownable {
     address private authorizedWallet;
 
-    constructor(string memory name, string memory symbol)
-        ERC20(name, symbol)
-        Ownable(msg.sender)
-    {
-    }
+    constructor(string memory name, string memory symbol) ERC20(name, symbol) Ownable(msg.sender) {}
+
 
     function setAuthorizedWallet(address _wallet) public onlyOwner {
         authorizedWallet = _wallet;
