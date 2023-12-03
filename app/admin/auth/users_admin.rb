@@ -10,6 +10,12 @@ Trestle.resource(:users, model: User, scope: Auth) do
     column :email, link: true
     column :name
     column :document
+    column :saldo_drex do |user|
+      user.saldo_drex
+    end
+    column :saldo_tpft do |user|
+      user.saldo_tpft_1
+    end
     actions do |a|
       a.delete unless a.instance == current_user
     end

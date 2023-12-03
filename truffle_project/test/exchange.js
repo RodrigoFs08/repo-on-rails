@@ -26,8 +26,9 @@ contract("ExchangeContract", accounts => {
     const tpftTokenId = 1;
     await drexToken.approve(exchangeContract.address, 100, { from: user1 });
     await tpftToken.setApprovalForAll(exchangeContract.address, true, { from: user2 });
-
-    await exchangeContract.exchangeDrexForTpft(user1, user2, 100, tpftTokenId, 50, { from: bancoCentral });
+    console.log(user1,user2)
+    teste = await exchangeContract.exchangeDrexForTpft(user1, user2, 100, tpftTokenId, 50, { from: bancoCentral })
+    console.log('aqui',teste['receipt']['rawLogs']);
 
     const finalDrexUser1 = await drexToken.balanceOf(user1);
     const finalTpftUser1 = await tpftToken.balanceOf(user1, tpftTokenId);

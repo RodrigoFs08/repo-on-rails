@@ -17,7 +17,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -30,7 +31,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -2547,9 +2549,41 @@
     "name": "solc",
     "version": "0.8.20+commit.a1b79de6.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "1701556241757": {
+      "events": {},
+      "links": {},
+      "address": "0xe9C830188476dA6E909FF0FdE19777Ee62F69eD0",
+      "transactionHash": "0xb3c369c49ca46c094566097f08920a90aa0173b5f467395adff7488b6f8f5b28"
+    },
+    "1701612354678": {
+      "events": {},
+      "links": {},
+      "address": "0x8aAf362610cDbAB170B4Af087A084e1Ad2035244",
+      "transactionHash": "0xc6dcb855060e0bbc11be8450967c5f1e77787b76519b50a3243a8c22cff59888"
+    },
+    "1701617284147": {
+      "events": {},
+      "links": {},
+      "address": "0xb5560da8abeA2AAC245F427C1a9254DeB9c04600",
+      "transactionHash": "0xbd407aaf0fb03097edf0612139c37e2dedd76ef35990641c2b20d1af6d9a2e02"
+    },
+    "1701618822065": {
+      "events": {},
+      "links": {},
+      "address": "0xfd9778FcaE0c6b1642292783badcbA52Ddf4bdbf",
+      "transactionHash": "0xabb84a404c4d67f46ac2831fbe876e774f7254368165ec84c3a3e7e535544ff3"
+    },
+    "1701618976383": {
+      "events": {},
+      "links": {},
+      "address": "0xb5560da8abeA2AAC245F427C1a9254DeB9c04600",
+      "transactionHash": "0xbd407aaf0fb03097edf0612139c37e2dedd76ef35990641c2b20d1af6d9a2e02"
+    }
+  },
   "schemaVersion": "3.4.16",
-  "updatedAt": "2023-12-01T18:44:16.322Z",
+  "updatedAt": "2023-12-03T15:56:26.943Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},

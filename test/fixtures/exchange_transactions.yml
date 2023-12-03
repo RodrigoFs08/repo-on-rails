@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  from_address: MyString
+  to_address: MyString
+  drex_amount: 1
+  tpft_token_id: 1
+  tpft_amount: 1
+  timestamp: 2023-12-03 13:00:01
+
+two:
+  from_address: MyString
+  to_address: MyString
+  drex_amount: 1
+  tpft_token_id: 1
+  tpft_amount: 1
+  timestamp: 2023-12-03 13:00:01

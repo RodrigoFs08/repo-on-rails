@@ -4,7 +4,7 @@ module Contracts
   class Str
     def initialize(private_key)
       @key = Eth::Key.new(priv: private_key)
-      @client = Eth::Client.create "http://127.0.0.1:8545"
+      @client = Eth::Client.create ENV["DEV_BLOCKCHAIN_HOST"]
       @contract = Eth::Contract.from_abi(name: "STR", address: ENV["STR_CONTRACT_ADRESS"], abi: ContractService.get_abi("STR"))
     end
 
@@ -24,11 +24,23 @@ module Contracts
       call_contract_function("removerSTN", address)
     end
 
+    def solicitar_drex(amount)
+      call_contract_function("solicitarMintDrex", amount)
+    end
+
+    def solicitar_burn_drex(amount)
+      call_contract_function("solicitarBurnDrex", amount)
+    end
+
+    def criar_operacao_compromissada(quantidade_drex, id_tpft, quantidade_tpft, tomador, credor, prazo, taxa_anual)
+      call_contract_function("criarOperacaoCompromissada", quantidade_drex, id_tpft, quantidade_tpft, tomador, credor, prazo, taxa_anual)
+    end
+
     private
 
-    def call_contract_function(function_name, address)
+    def call_contract_function(function_name, *args)
       # Construir a transação
-      tx = @client.transact_and_wait(@contract, function_name, address, sender_key: @key, gas_limit: 200436)
+      tx = @client.transact_and_wait(@contract, function_name, *args, sender_key: @key, gas_limit: 1200436)
 
       # Enviar a transação
       puts "Transação #{function_name} enviada: #{tx}"
