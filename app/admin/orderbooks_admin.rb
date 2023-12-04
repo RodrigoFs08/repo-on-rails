@@ -12,8 +12,12 @@ Trestle.resource(:orderbooks) do
   # Customize the table columns shown on the index view.
   #
   table autolink: false do
-    column :tipo_lancamento, align: :center, format: :tags, header: "Lançamento"
-    column :tipo_moeda, align: :center, format: :tags, header: "Ativo"
+    column :tipo_lancamento, align: :center, format: :tags, header: "Lançamento" do |orderbook|
+      orderbook.tipo_lancamento.humanize
+    end
+    column :tipo_moeda, align: :center, format: :tags, header: "Ativo" do |orderbook|
+      orderbook.tipo_moeda.humanize
+    end
     column :quantidade, align: :center
     column :taxa, align: :center, header: "% do CDI" do |orderbook|
       number_to_percentage(orderbook.taxa, precision: 0)
