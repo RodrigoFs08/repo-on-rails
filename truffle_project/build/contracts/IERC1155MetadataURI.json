@@ -522,7 +522,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.16",
-  "updatedAt": "2023-12-03T23:37:22.366Z",
+  "updatedAt": "2023-12-04T04:36:56.628Z",
   "devdoc": {
     "details": "Interface of the optional ERC1155MetadataExtension interface, as defined in the https://eips.ethereum.org/EIPS/eip-1155#metadata-extensions[EIP].",
     "events": {

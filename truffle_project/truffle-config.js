@@ -71,6 +71,14 @@ module.exports = {
       timeoutBlocks: 200,
       skipDryRun: true,
     },
+
+    sepolia: {
+      provider: () => new HDWalletProvider(mnemonic, 'https://sepolia.infura.io/v3/7b34b0a0a467486f8f60794add1798bf'),
+      network_id: 11155111, // ID da rede Sepolia
+      confirmations: 2,     // Número de confirmações a esperar entre implantações
+      timeoutBlocks: 200,   // Número de blocos antes de um timeout de implantação
+      skipDryRun: true      // Pular a execução de teste antes das migrações
+  }
     //
     // An additional network, but with some advanced options…
     // advanced: {
