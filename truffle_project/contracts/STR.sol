@@ -155,6 +155,17 @@ contract STR is AccessControl, AutomationCompatible {
         return (quantidade * taxaPrazo) / 100;
     }
 
+
+function calcularTaxa(uint256 quantidade, uint256 taxaAnual, uint256 prazo) internal pure returns (uint256) {
+    // Calcula a taxa proporcional ao período da operação
+    // A taxa anual é convertida para uma taxa proporcional ao prazo
+    // Assumindo que o prazo está em segundos, e o ano tem 365.25 dias (incluindo anos bissextos)
+    prazoSegundos = 1 * 24*60*60
+    uint256 taxaPrazo = ((taxaAnual/100)+1) ^ (prazoSegundos/(252 * 24 * 60 * 60))
+    return quantidade * taxaPrazo / 100;
+}
+
+
     function checkUpkeep(
         bytes calldata
     ) external view override returns (bool upkeepNeeded, bytes memory performData) {
