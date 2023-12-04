@@ -139,6 +139,20 @@ Antes de começar, certifique-se de ter instalado:
 - Navegue até a interface do aplicativo para testar as funcionalidades e interações com os contratos inteligentes.
 - Para rodar o monitor de transações, digite `rake monitor:transactions`.
 
+## Simulador de Compromissadas
+O código SIMULADOR-COMPROMISSADA simula transações bancárias entre diferentes tipos de bancos e movimentos de mercado. Ele realiza as seguintes etapas:
+
+1. **Definição de Datas e Feriados:** Define um intervalo de datas e uma lista de feriados.
+
+2. **Definição de Bancos:** Cria classes para bancos superavitários, deficitários e neutros, cada um com saldos aleatórios em dinheiro real, DREX e bonds.
+
+3. **Operações de Zeragem e Compromissadas:** Implementa funções para zerar saldos negativos entre bancos, converter saldos de dinheiro real para DREX e realizar operações de compromissadas entre bancos.
+
+4. **Simulação Diária:** Simula transações diárias, valorização de ativos (bonds), operações intraday e overnight, identificação de bancos deficitários, zeragem de saldos, geração aleatória de caixas intraday e recompra.
+
+5. **Exportação de Dados:** Gera DataFrames do Pandas e os exporta para arquivos Excel, registrando transações de compromissadas, saldos diários dos bancos e movimentações internas de zeragem.
+
+Esse código foi desenvolvido para simularmos o ambiente das operações compromissadas para termos dados de teste e maior clareza dos tipos de dados.
 ## Licença
 
 MIT License
