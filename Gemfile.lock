@@ -107,6 +107,7 @@ GEM
       openssl (>= 2.2, < 4.0)
       rbsecp256k1 (~> 6.0)
       scrypt (~> 3.0)
+    ffi (1.16.3)
     ffi (1.16.3-x64-mingw32)
     ffi-compiler (1.0.1)
       ffi (>= 1.0.0)
@@ -168,8 +169,11 @@ GEM
     nio4r (2.6.1)
     nokogiri (1.15.5-x64-mingw32)
       racc (~> 1.4)
+    nokogiri (1.15.5-x86_64-linux)
+      racc (~> 1.4)
     openssl (3.2.0)
     orm_adapter (0.5.0)
+    pg (1.5.4)
     pg (1.5.4-x64-mingw32)
     pkg-config (1.5.6)
     psych (5.1.1.1)
@@ -224,6 +228,8 @@ GEM
       railties (>= 5.2)
     rexml (3.2.6)
     rubyzip (2.3.2)
+    sassc (2.4.0)
+      ffi (~> 1.9)
     sassc (2.4.0-x64-mingw32)
       ffi (~> 1.9)
     sassc-rails (2.1.2)
@@ -287,6 +293,7 @@ GEM
 
 PLATFORMS
   x64-mingw32
+  x86_64-linux
 
 DEPENDENCIES
   bootsnap

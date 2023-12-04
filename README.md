@@ -1,6 +1,15 @@
 # Nome do Projeto
 
-Breve descrição do seu projeto.
+O projeto "Repo on Rails - Operações Compromissadas na Web 3" é uma aplicação desenvolvida em Ruby on Rails que gerencia carteiras de Ethereum e interage com contratos inteligentes. O projeto utiliza a ferramenta Truffle para a implantação de contratos com testes automatizados e consiste em quatro Smart Contracts principais:
+
+1.	`STR` (Sistema de Transferências de Reservas): Este contrato simula o STR e é responsável por adicionar participantes, emitir DREX (Digital Real ERC20), e criar e gerenciar operações compromissadas.
+2.	`DREX` (Digital Real ERC20): Simula o Real Digital no padrão ERC20.
+3.	`Tpft` (Token de Título Público ERC1155): Representa os títulos públicos no padrão ERC1155.
+4.	`ExchangeContract`: Facilita a troca entre DREX e Tpft.
+Além disso, o sistema inclui uma tarefa 'rake' que lê blocos da blockchain e procura por transações de operações compromissadas que ocorreram no ambiente.
+Um aspecto notável do projeto é o desenvolvimento de um marketplace para a proposta de operações compromissadas. No final de cada janela de operações, se houver participantes que necessitem de liquidação (zeragem do caixa), um algoritmo de zeragem é acionado automaticamente para montar operações compromissadas. Dessa forma, existem dois cenários para as operações: um manual, através de propostas e aceites, e outro automatizado. Ambos os cenários lançam as propostas na web por meio do contrato STR.
+Este resumo destaca a complexidade e a inovação incorporadas ao projeto, refletindo seu potencial para impactar significativamente o setor de operações financeiras na Web 3.
+
 
 ## Pré-requisitos
 
