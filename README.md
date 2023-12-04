@@ -6,7 +6,10 @@ O projeto "Repo on Rails - Operações Compromissadas na Web 3" é uma aplicaç�
 2.	`DREX` (Digital Real ERC20): Simula o Real Digital no padrão ERC20.
 3.	`Tpft` (Token de Título Público ERC1155): Representa os títulos públicos no padrão ERC1155.
 4.	`ExchangeContract`: Facilita a troca entre DREX e Tpft.
+
+
 Além disso, o sistema inclui uma tarefa 'rake' que lê blocos da blockchain e procura por transações de operações compromissadas que ocorreram no ambiente.
+
 Um aspecto notável do projeto é o desenvolvimento de um marketplace para a proposta de operações compromissadas. No final de cada janela de operações, se houver participantes que necessitem de liquidação (zeragem do caixa), um algoritmo de zeragem é acionado automaticamente para montar operações compromissadas. Dessa forma, existem dois cenários para as operações: um manual, através de propostas e aceites, e outro automatizado. Ambos os cenários lançam as propostas na web por meio do contrato STR.
 Este resumo destaca a complexidade e a inovação incorporadas ao projeto, refletindo seu potencial para impactar significativamente o setor de operações financeiras na Web 3.
 
@@ -118,6 +121,7 @@ Antes de começar, certifique-se de ter instalado:
 - Navegue até a interface do aplicativo para testar as funcionalidades e interações com os contratos inteligentes.
 - Para rodar o monitor de transações, digite `rake monitor:transactions`.
 
+## Licença
 
 MIT License
 
