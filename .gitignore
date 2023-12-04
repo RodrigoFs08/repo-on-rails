@@ -32,3 +32,5 @@
 
 # Ignore truffle node modules
 /truffle_project/node_modules
+
+/.env

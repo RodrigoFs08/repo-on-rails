@@ -10,6 +10,16 @@ Além disso, o sistema inclui uma tarefa 'rake' que lê blocos da blockchain e p
 Um aspecto notável do projeto é o desenvolvimento de um marketplace para a proposta de operações compromissadas. No final de cada janela de operações, se houver participantes que necessitem de liquidação (zeragem do caixa), um algoritmo de zeragem é acionado automaticamente para montar operações compromissadas. Dessa forma, existem dois cenários para as operações: um manual, através de propostas e aceites, e outro automatizado. Ambos os cenários lançam as propostas na web por meio do contrato STR.
 Este resumo destaca a complexidade e a inovação incorporadas ao projeto, refletindo seu potencial para impactar significativamente o setor de operações financeiras na Web 3.
 
+## Smart Contracts (Rede de testes Ethereum Sepolia)
+
+colocar link para o etherscan dos contratos
+
+DREXToken - 0xC7b997B51A1c7C3e2468075e51EC034E036e424C
+TPFtToken - 0xf663b153Ba7dA589bE7bF40B939b9a166C994AA2
+ExchangeContract - 0x960708E3E4aF151F4Abc62E0f668Faeed229d8d0
+STR - 0x890300ddB65Fc3f7094006C2cA75f8651a5A9B30
+
+Chainlink Automation Cron - 
 
 ## Pré-requisitos
 
@@ -44,48 +54,69 @@ Com o Node.js e npm instalados, instale o Truffle globalmente:
 
 `npm install -g truffle`
 
+# Tutorial de Implantação e Testes
 
-## Configuração do Projeto
+Este tutorial guiará você pelos passos para testar e implantar os contratos inteligentes usando Truffle, configurar o ambiente Rails e preparar o sistema para uso no projeto "Repo on Rails".
 
-### Instalação das Dependências do Ruby
+## Pré-requisitos
 
-Instale as dependências do Ruby especificadas no Gemfile:
+Antes de começar, certifique-se de ter instalado:
+- Ruby on Rails
+- Truffle
+- Ganache (para testes locais) ou acesso a uma rede Ethereum como Sepolia
+- Node.js e npm
 
-`bundle install`
+## Configuração do Ambiente
 
+### 1. Configurar Variáveis de Ambiente:
+- Duplique o arquivo `.env.sample` e renomeie para `.env`.
+- Preencha o `.env` com as variáveis necessárias, como host da rede blockchain, endereço dos contratos, entre outras configurações específicas.
 
-### Configuração do Truffle
+### 2. Iniciar Ganache (Para Testes Locais):
+- Se estiver usando Ganache para testes locais, inicie o Ganache e certifique-se de que todas as contas listadas no ambiente estão criadas e configuradas.
 
-Navegue até a pasta `truffle_projects`:
+### 3. Distribuição de ETH para Testes na Rede Sepolia (Se Aplicável):
+- Se estiver testando na rede Sepolia, distribua ETH para todas as carteiras necessárias conforme definido no seu ambiente.
 
-`cd truffle_projects`
+## Implantação dos Contratos Inteligentes com Truffle
 
+### 1. Compilar os Contratos:
 
-Instale as dependências do projeto Truffle:
+- Instale as dependências do projeto Truffle:
 
 `npm install`
 
+- Navegue até o diretório do projeto (`truffle_project`, na raiz do projeto) e execute `truffle compile`.
 
+### 2. Migrar os Contratos:
+- Para implantar os contratos na sua rede de testes (Ganache ou Sepolia), execute `truffle migrate`.
 
-## Inicialização do Projeto Rails
+### 3. Testes Automatizados:
+- Para executar os testes automatizados dos contratos, utilize `truffle test`.
 
-Após concluir as configurações:
+## Configuração do Projeto Rails
 
-1. Volte para a raiz do seu projeto Rails (se você estiver na pasta `truffle projects`, use `cd ..`).
-2. Execute as migrações do banco de dados:
+### 1. Instalar Dependências:
+- Execute `bundle install` para instalar as dependências do Ruby on Rails.
 
-    `rails db:create db:migrate`
+### 2. Configurar Banco de Dados:
+- Execute `rails db:create` e `rails db:migrate` para configurar o banco de dados.
 
-3. Inicie o servidor Rails com:
+### 3. Criar Usuários e Carteiras:
+- Para inicializar usuários e carteiras, execute `rails db:seed`.
 
-    `rails server`
+### 4. Finalizar Configuração Inicial:
+- Após implantar os contratos, atualize os endereços de cada um no `.env`.
+- Execute `rails db:seed` novamente para rodar as configurações iniciais do projeto (adicionar participantes, dar as devidas autorizações, etc).
 
-4. Acesse o aplicativo no navegador em `http://localhost:3000`.
+## Execução e Testes do Aplicativo
 
-## Contribuição
+### 1. Iniciar o Servidor Rails:
+- Execute `rails server` para iniciar o aplicativo.
 
-Instruções para contribuir para o projeto.
-
+### 2. Testar Funcionalidades:
+- Navegue até a interface do aplicativo para testar as funcionalidades e interações com os contratos inteligentes.
+- Para rodar o monitor de transações, digite `rake monitor:transactions`.
 
 
 MIT License
