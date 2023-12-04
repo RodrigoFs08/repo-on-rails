@@ -12,9 +12,14 @@ Além disso, o sistema inclui uma tarefa 'rake' que lê blocos da blockchain e p
 
 Um aspecto notável do projeto é o desenvolvimento de um marketplace para a proposta de operações compromissadas. No final de cada janela de operações, se houver participantes que necessitem de liquidação (zeragem do caixa), um algoritmo de zeragem é acionado automaticamente para montar operações compromissadas. Dessa forma, existem dois cenários para as operações: um manual, através de propostas e aceites, e outro automatizado. Ambos os cenários lançam as propostas na web por meio do contrato STR.
 
-<img src="https://i.ibb.co/fkpx6B1/Diagrama-sem-nome-drawio.png" width="600">
 
+<p align="center">
+  <img src="https://i.ibb.co/fkpx6B1/Diagrama-sem-nome-drawio.png" width="600">
+</p>
 
+<p align="center">
+  <img src="https://i.ibb.co/Gcwt0F5/Imagem-do-Whats-App-de-2023-12-04-s-19-05-02-560a22ad.jpg" width="600">
+</p>
 ## Smart Contracts (Rede de testes Ethereum Sepolia)
 
 colocar link para o etherscan dos contratos
@@ -106,6 +111,16 @@ Antes de começar, certifique-se de ter instalado:
 
 ### 2. Configurar Banco de Dados:
 - Execute `rails db:create` e `rails db:migrate` para configurar o banco de dados.
+
+### 2.5. Gerar e Configurar Chave de Criptografia:
+- Uma nova chave de criptografia é necessária para proteger informações sensíveis, como as chaves privadas das carteiras.
+- Gere uma nova chave de criptografia executando `rails secret`.
+- Copie a chave gerada.
+- Rode `EDITOR="nome_do_seu_editor --wait" rails credentials:edit` para abrir o arquivo de credenciais. Se estiver usando o VS Code, por exemplo, você pode usar `EDITOR="code --wait" rails credentials:edit`.
+- Adicione a chave de criptografia gerada no arquivo de credenciais. Por exemplo:
+  ```yaml
+  wallet:
+    private_key_encryption_key: <chave_gerada>
 
 ### 3. Criar Usuários e Carteiras:
 - Para inicializar usuários e carteiras, execute `rails db:seed`.

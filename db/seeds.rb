@@ -66,9 +66,8 @@ tpft_client_stn.mint(ptp_4.wallet.address, 1, 765 * wei_multiplier, "0x0")
 tpft_client_stn.mint(ptp_6.wallet.address, 1, 856 * wei_multiplier, "0x0")
 
 #
-puts drex_client.balance_of(ptp_1.wallet.address)
-puts drex_client.balance_of(ptp_2.wallet.address)
-puts drex_client.balance_of(ptp_5.wallet.address)
+puts "Repo On Rails pronto para simulação"
+
 # # # Autorização para operações de câmbio
 # drex_client_p1.approve(exchange_contract_address, 500)
 # drex_client_p1.approve(str_contract_address, 500)

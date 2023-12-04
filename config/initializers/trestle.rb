@@ -9,11 +9,11 @@ Trestle.configure do |config|
   # expanded/desktop navigation. These images should be placed within your
   # asset paths, e.g. app/assets/images.
   #
-  config.site_logo = "https://i.ibb.co/dcTLwgD/Imagem-do-Whats-App-de-2023-11-28-s-12-56-52-9da07886-removebg-preview.png"
+  config.site_logo = "logo_repo.png"
 
   # Specify a custom image to be used for the collapsed/tablet navigation.
   #
-  config.site_logo_small = "https://i.ibb.co/dcTLwgD/Imagem-do-Whats-App-de-2023-11-28-s-12-56-52-9da07886-removebg-preview.png"
+  config.site_logo_small = "logo_repo.png"
 
   # Specify a favicon to be used within the admin.
   #
