@@ -4,6 +4,7 @@ class RepoTransactionMonitor
   def initialize(contract_address)
     @client = Eth::Client.create(ENV["DEV_BLOCKCHAIN_HOST"])
     @contract_address = contract_address
+    puts "aqui"
     contract_abi = ContractService.get_abi("STR")
     contract_name = "STR"
     @contract = Eth::Contract.from_abi(name: contract_name, address: @contract_address, abi: contract_abi)
@@ -11,7 +12,7 @@ class RepoTransactionMonitor
 
   def check_new_transactions
     latest_block = @client.eth_block_number["result"].to_i(16)
-    last_checked_block = latest_block - 5
+    last_checked_block = latest_block - 1000
     (last_checked_block + 1).upto(latest_block) do |block_number|
       block = @client.eth_get_block_by_number(block_number, true)
       process_transactions(block["result"]["transactions"], block["result"])
