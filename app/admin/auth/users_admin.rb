@@ -20,10 +20,10 @@ Trestle.resource(:users, model: User, scope: Auth) do
     column :name, header: "Nome", align: :center
     column :document, header: "Documento", align: :center
     column :saldo_drex, header: "Saldo DREX", align: :center do |user|
-      number_to_currency(user.saldo_drex / 10 ** 18, unit: "DREX")
+      number_to_currency(user.saldo_drex / 10 ** 18, unit: "DREX") unless user.saldo_drex.nil?
     end
     column :saldo_tpft, header: "Saldo Título Publico Tokenizado", align: :center do |user|
-      user.saldo_tpft_1 / 10 ** 18
+      user.saldo_tpft_1 / 10 ** 18 unless user.saldo_tpft_1.nil?
     end
   end
 
