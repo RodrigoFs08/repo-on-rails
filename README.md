@@ -20,6 +20,7 @@ Um aspecto notável do projeto é o desenvolvimento de um marketplace para a pro
 <p align="center">
   <img src="https://i.ibb.co/Gcwt0F5/Imagem-do-Whats-App-de-2023-12-04-s-19-05-02-560a22ad.jpg" width="600">
 </p>
+
 ## Smart Contracts (Rede de testes Ethereum Sepolia)
 
 colocar link para o etherscan dos contratos
