@@ -5,7 +5,7 @@ module Contracts
     def initialize(private_key)
       @key = Eth::Key.new(priv: private_key)
       @client = Eth::Client.create ENV["DEV_BLOCKCHAIN_HOST"]
-      @contract = Eth::Contract.from_abi(name: "STR", address: ENV["STR_CONTRACT_ADRESS"], abi: ContractService.get_abi("STR"))
+      @contract = Eth::Contract.from_abi(name: "STR", address: ENV["STR_CONTRACT_ADDRESS"], abi: ContractService.get_abi("STR"))
     end
 
     def adicionar_participante(address)
@@ -33,7 +33,7 @@ module Contracts
     end
 
     def criar_operacao_compromissada(quantidade_drex, id_tpft, quantidade_tpft, tomador, credor, prazo, taxa_anual)
-      call_contract_function("criarOperacaoCompromissada", quantidade_drex, id_tpft, quantidade_tpft, tomador, credor, prazo, taxa_anual)
+      tx = call_contract_function("criarOperacaoCompromissada", quantidade_drex, id_tpft, quantidade_tpft, tomador, credor, prazo, taxa_anual)
     end
 
     private
@@ -41,9 +41,9 @@ module Contracts
     def call_contract_function(function_name, *args)
       # Construir a transação
       tx = @client.transact_and_wait(@contract, function_name, *args, sender_key: @key, gas_limit: 1200436)
-
       # Enviar a transação
       puts "Transação #{function_name} enviada: #{tx}"
+      return tx
     end
   end
 end

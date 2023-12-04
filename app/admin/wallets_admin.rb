@@ -1,7 +1,7 @@
 Trestle.resource(:wallets) do
-  menu do
-    item :wallets, icon: "fa fa-money-bill-alt", label: I18n.t("sidebar.wallets")
-  end
+  # menu do
+  #   item :wallets, icon: "fa fa-money-bill-alt", label: I18n.t("sidebar.wallets")
+  # end
 
   table do
     column :user, header: I18n.t("wallets.fields.user")

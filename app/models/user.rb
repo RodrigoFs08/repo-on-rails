@@ -22,6 +22,6 @@ class User < ApplicationRecord
 
   def build_ethereum_wallet
     key = Eth::Key.new
-    self.wallets.build(address: key.address, private_key: key.private_hex)
+    build_wallet(address: key.address, private_key: key.private_hex)
   end
 end

@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  lancador: MyString
+  tipo_lancamento: MyString
+  tipo_moeda: MyString
+  quantidade: 1
+  taxa: 1.5
+  vencimento: 2023-12-03 20:54:12
+  fechado: false
+  tomador: MyString
+  blockchain_tx: MyString
+
+two:
+  lancador: MyString
+  tipo_lancamento: MyString
+  tipo_moeda: MyString
+  quantidade: 1
+  taxa: 1.5
+  vencimento: 2023-12-03 20:54:12
+  fechado: false
+  tomador: MyString
+  blockchain_tx: MyString

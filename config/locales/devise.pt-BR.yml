@@ -35,6 +35,12 @@ pt-BR:
       user:
         one: Usuário
         other: Usuários
+      orderbook:
+        one: Proposta
+        other: Propostas
+      exchange_transaction:
+        one: Transação
+        other: Transações
       
   devise:
     confirmations:

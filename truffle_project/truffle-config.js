@@ -45,7 +45,7 @@
 // const { MNEMONIC, PROJECT_ID } = process.env;
 
 const HDWalletProvider = require('@truffle/hdwallet-provider');
-const mnemonic = '87e9eb2d4041ab067b5b698b75cf46650d1adac4af70687c42626e579a25b784';
+const mnemonic = 'b84611cbb08522068a17d36daf4f294fadb300c9b23ae56b4914670814f1735a';
 
 module.exports = {
   /**
