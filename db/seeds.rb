@@ -65,29 +65,4 @@ tpft_client_stn.mint(ptp_3.wallet.address, 1, 985 * wei_multiplier, "0x0")
 tpft_client_stn.mint(ptp_4.wallet.address, 1, 765 * wei_multiplier, "0x0")
 tpft_client_stn.mint(ptp_6.wallet.address, 1, 856 * wei_multiplier, "0x0")
 
-#
 puts "Repo On Rails pronto para simulação"
-
-# # # Autorização para operações de câmbio
-# drex_client_p1.approve(exchange_contract_address, 500)
-# drex_client_p1.approve(str_contract_address, 500)
-
-# tpft_client_p2 = Contracts::Tpft.new(ptp_3.wallet.private_key)
-# tpft_client_p2.set_approval_for_all(exchange_contract_address, true)
-# tpft_client_p2.set_approval_for_all(str_contract_address, true)
-
-# # Execução do câmbio
-# # Trocar DREX por TPFt entre participantes ptp_1 e ptp_2
-# # Assumindo que ptp_1 está enviando DREX e ptp_2 está recebendo em troca de TPFt
-# quantidade_drex = 500 # Quantidade de DREX a ser trocada
-# tpft_token_id = 1 # ID do token TPFt
-# quantidade_tpft = 800 # Quantidade de TPFt a ser trocada
-# prazo = 1
-# taxa = 33
-
-# # Cliente do Exchange para realizar a troca
-# repo = str_client_bc.criar_operacao_compromissada(quantidade_drex, tpft_token_id, quantidade_tpft, ptp_3.wallet.address, ptp_1.wallet.address, prazo, taxa)
-
-# puts "repo", repo
-
-# puts "Troca de #{quantidade_drex} DREX por #{quantidade_tpft} TPFt realizada entre #{ptp_1.name} e #{ptp_2.name}"

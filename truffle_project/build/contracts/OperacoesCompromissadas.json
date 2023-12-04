@@ -7315,15 +7315,15 @@
         2546
       ],
       "OperacoesCompromissadas": [
-        5004
+        5016
       ]
     },
-    "id": 5005,
+    "id": 5017,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4829,
+        "id": 4841,
         "literals": [
           "solidity",
           ">=",
@@ -7339,10 +7339,10 @@
       {
         "absolutePath": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
         "file": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
-        "id": 4830,
+        "id": 4842,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 5005,
+        "scope": 5017,
         "sourceUnit": 2547,
         "src": "69:56:25",
         "symbolAliases": [],
@@ -7351,10 +7351,10 @@
       {
         "absolutePath": "@openzeppelin/contracts/access/AccessControl.sol",
         "file": "@openzeppelin/contracts/access/AccessControl.sol",
-        "id": 4831,
+        "id": 4843,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 5005,
+        "scope": 5017,
         "sourceUnit": 354,
         "src": "127:58:25",
         "symbolAliases": [],
@@ -7365,7 +7365,7 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 4832,
+              "id": 4844,
               "name": "AccessControl",
               "nameLocations": [
                 "225:13:25"
@@ -7374,7 +7374,7 @@
               "referencedDeclaration": 353,
               "src": "225:13:25"
             },
-            "id": 4833,
+            "id": 4845,
             "nodeType": "InheritanceSpecifier",
             "src": "225:13:25"
           }
@@ -7383,9 +7383,9 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 5004,
+        "id": 5016,
         "linearizedBaseContracts": [
-          5004,
+          5016,
           353,
           2911,
           2923,
@@ -7399,12 +7399,12 @@
           {
             "constant": false,
             "functionSelector": "b756e07b",
-            "id": 4836,
+            "id": 4848,
             "mutability": "mutable",
             "name": "drexToken",
             "nameLocation": "260:9:25",
             "nodeType": "VariableDeclaration",
-            "scope": 5004,
+            "scope": 5016,
             "src": "246:23:25",
             "stateVariable": true,
             "storageLocation": "default",
@@ -7413,10 +7413,10 @@
               "typeString": "contract IERC20"
             },
             "typeName": {
-              "id": 4835,
+              "id": 4847,
               "nodeType": "UserDefinedTypeName",
               "pathNode": {
-                "id": 4834,
+                "id": 4846,
                 "name": "IERC20",
                 "nameLocations": [
                   "246:6:25"
@@ -7437,12 +7437,12 @@
           {
             "constant": false,
             "functionSelector": "85a21b70",
-            "id": 4839,
+            "id": 4851,
             "mutability": "mutable",
             "name": "tpftToken",
             "nameLocation": "290:9:25",
             "nodeType": "VariableDeclaration",
-            "scope": 5004,
+            "scope": 5016,
             "src": "276:23:25",
             "stateVariable": true,
             "storageLocation": "default",
@@ -7451,10 +7451,10 @@
               "typeString": "contract IERC20"
             },
             "typeName": {
-              "id": 4838,
+              "id": 4850,
               "nodeType": "UserDefinedTypeName",
               "pathNode": {
-                "id": 4837,
+                "id": 4849,
                 "name": "IERC20",
                 "nameLocations": [
                   "276:6:25"
@@ -7474,16 +7474,16 @@
           },
           {
             "canonicalName": "OperacoesCompromissadas.Operacao",
-            "id": 4850,
+            "id": 4862,
             "members": [
               {
                 "constant": false,
-                "id": 4841,
+                "id": 4853,
                 "mutability": "mutable",
                 "name": "emprestador",
                 "nameLocation": "347:11:25",
                 "nodeType": "VariableDeclaration",
-                "scope": 4850,
+                "scope": 4862,
                 "src": "339:19:25",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -7492,7 +7492,7 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 4840,
+                  "id": 4852,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
                   "src": "339:7:25",
@@ -7506,12 +7506,12 @@
               },
               {
                 "constant": false,
-                "id": 4843,
+                "id": 4855,
                 "mutability": "mutable",
                 "name": "tomador",
                 "nameLocation": "377:7:25",
                 "nodeType": "VariableDeclaration",
-                "scope": 4850,
+                "scope": 4862,
                 "src": "369:15:25",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -7520,7 +7520,7 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 4842,
+                  "id": 4854,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
                   "src": "369:7:25",
@@ -7534,12 +7534,12 @@
               },
               {
                 "constant": false,
-                "id": 4845,
+                "id": 4857,
                 "mutability": "mutable",
                 "name": "quantidadeDrex",
                 "nameLocation": "403:14:25",
                 "nodeType": "VariableDeclaration",
-                "scope": 4850,
+                "scope": 4862,
                 "src": "395:22:25",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -7548,7 +7548,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 4844,
+                  "id": 4856,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "395:7:25",
@@ -7561,12 +7561,12 @@
               },
               {
                 "constant": false,
-                "id": 4847,
+                "id": 4859,
                 "mutability": "mutable",
                 "name": "quantidadeTpft",
                 "nameLocation": "436:14:25",
                 "nodeType": "VariableDeclaration",
-                "scope": 4850,
+                "scope": 4862,
                 "src": "428:22:25",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -7575,7 +7575,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 4846,
+                  "id": 4858,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "428:7:25",
@@ -7588,12 +7588,12 @@
               },
               {
                 "constant": false,
-                "id": 4849,
+                "id": 4861,
                 "mutability": "mutable",
                 "name": "ativa",
                 "nameLocation": "466:5:25",
                 "nodeType": "VariableDeclaration",
-                "scope": 4850,
+                "scope": 4862,
                 "src": "461:10:25",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -7602,7 +7602,7 @@
                   "typeString": "bool"
                 },
                 "typeName": {
-                  "id": 4848,
+                  "id": 4860,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
                   "src": "461:4:25",
@@ -7617,32 +7617,32 @@
             "name": "Operacao",
             "nameLocation": "319:8:25",
             "nodeType": "StructDefinition",
-            "scope": 5004,
+            "scope": 5016,
             "src": "312:167:25",
             "visibility": "public"
           },
           {
             "constant": false,
             "functionSelector": "2b5f05b7",
-            "id": 4855,
+            "id": 4867,
             "mutability": "mutable",
             "name": "operacoes",
             "nameLocation": "523:9:25",
             "nodeType": "VariableDeclaration",
-            "scope": 5004,
+            "scope": 5016,
             "src": "487:45:25",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Operacao_$4850_storage_$",
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Operacao_$4862_storage_$",
               "typeString": "mapping(uint256 => struct OperacoesCompromissadas.Operacao)"
             },
             "typeName": {
-              "id": 4854,
+              "id": 4866,
               "keyName": "",
               "keyNameLocation": "-1:-1:-1",
               "keyType": {
-                "id": 4851,
+                "id": 4863,
                 "name": "uint256",
                 "nodeType": "ElementaryTypeName",
                 "src": "495:7:25",
@@ -7654,28 +7654,28 @@
               "nodeType": "Mapping",
               "src": "487:28:25",
               "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Operacao_$4850_storage_$",
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Operacao_$4862_storage_$",
                 "typeString": "mapping(uint256 => struct OperacoesCompromissadas.Operacao)"
               },
               "valueName": "",
               "valueNameLocation": "-1:-1:-1",
               "valueType": {
-                "id": 4853,
+                "id": 4865,
                 "nodeType": "UserDefinedTypeName",
                 "pathNode": {
-                  "id": 4852,
+                  "id": 4864,
                   "name": "Operacao",
                   "nameLocations": [
                     "506:8:25"
                   ],
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 4850,
+                  "referencedDeclaration": 4862,
                   "src": "506:8:25"
                 },
-                "referencedDeclaration": 4850,
+                "referencedDeclaration": 4862,
                 "src": "506:8:25",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_Operacao_$4850_storage_ptr",
+                  "typeIdentifier": "t_struct$_Operacao_$4862_storage_ptr",
                   "typeString": "struct OperacoesCompromissadas.Operacao"
                 }
               }
@@ -7685,12 +7685,12 @@
           {
             "constant": false,
             "functionSelector": "1b979804",
-            "id": 4857,
+            "id": 4869,
             "mutability": "mutable",
             "name": "proximaOperacaoId",
             "nameLocation": "554:17:25",
             "nodeType": "VariableDeclaration",
-            "scope": 5004,
+            "scope": 5016,
             "src": "539:32:25",
             "stateVariable": true,
             "storageLocation": "default",
@@ -7699,7 +7699,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 4856,
+              "id": 4868,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "539:7:25",
@@ -7713,12 +7713,12 @@
           {
             "constant": true,
             "functionSelector": "82fe0e6c",
-            "id": 4862,
+            "id": 4874,
             "mutability": "constant",
             "name": "PARTICIPANTE_ROLE",
             "nameLocation": "604:17:25",
             "nodeType": "VariableDeclaration",
-            "scope": 5004,
+            "scope": 5016,
             "src": "580:74:25",
             "stateVariable": true,
             "storageLocation": "default",
@@ -7727,7 +7727,7 @@
               "typeString": "bytes32"
             },
             "typeName": {
-              "id": 4858,
+              "id": 4870,
               "name": "bytes32",
               "nodeType": "ElementaryTypeName",
               "src": "580:7:25",
@@ -7740,7 +7740,7 @@
               "arguments": [
                 {
                   "hexValue": "5041525449434950414e54455f524f4c45",
-                  "id": 4860,
+                  "id": 4872,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -7762,7 +7762,7 @@
                     "typeString": "literal_string \"PARTICIPANTE_ROLE\""
                   }
                 ],
-                "id": 4859,
+                "id": 4871,
                 "name": "keccak256",
                 "nodeType": "Identifier",
                 "overloadedDeclarations": [],
@@ -7773,7 +7773,7 @@
                   "typeString": "function (bytes memory) pure returns (bytes32)"
                 }
               },
-              "id": 4861,
+              "id": 4873,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -7793,23 +7793,23 @@
           },
           {
             "body": {
-              "id": 4881,
+              "id": 4893,
               "nodeType": "Block",
               "src": "715:90:25",
               "statements": [
                 {
                   "expression": {
-                    "id": 4873,
+                    "id": 4885,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 4869,
+                      "id": 4881,
                       "name": "drexToken",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4836,
+                      "referencedDeclaration": 4848,
                       "src": "726:9:25",
                       "typeDescriptions": {
                         "typeIdentifier": "t_contract$_IERC20_$2546",
@@ -7821,11 +7821,11 @@
                     "rightHandSide": {
                       "arguments": [
                         {
-                          "id": 4871,
+                          "id": 4883,
                           "name": "_drexToken",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 4864,
+                          "referencedDeclaration": 4876,
                           "src": "745:10:25",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -7840,7 +7840,7 @@
                             "typeString": "address"
                           }
                         ],
-                        "id": 4870,
+                        "id": 4882,
                         "name": "IERC20",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -7851,7 +7851,7 @@
                           "typeString": "type(contract IERC20)"
                         }
                       },
-                      "id": 4872,
+                      "id": 4884,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -7873,23 +7873,23 @@
                       "typeString": "contract IERC20"
                     }
                   },
-                  "id": 4874,
+                  "id": 4886,
                   "nodeType": "ExpressionStatement",
                   "src": "726:30:25"
                 },
                 {
                   "expression": {
-                    "id": 4879,
+                    "id": 4891,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 4875,
+                      "id": 4887,
                       "name": "tpftToken",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4839,
+                      "referencedDeclaration": 4851,
                       "src": "767:9:25",
                       "typeDescriptions": {
                         "typeIdentifier": "t_contract$_IERC20_$2546",
@@ -7901,11 +7901,11 @@
                     "rightHandSide": {
                       "arguments": [
                         {
-                          "id": 4877,
+                          "id": 4889,
                           "name": "_tpftToken",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 4866,
+                          "referencedDeclaration": 4878,
                           "src": "786:10:25",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -7920,7 +7920,7 @@
                             "typeString": "address"
                           }
                         ],
-                        "id": 4876,
+                        "id": 4888,
                         "name": "IERC20",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -7931,7 +7931,7 @@
                           "typeString": "type(contract IERC20)"
                         }
                       },
-                      "id": 4878,
+                      "id": 4890,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -7953,13 +7953,13 @@
                       "typeString": "contract IERC20"
                     }
                   },
-                  "id": 4880,
+                  "id": 4892,
                   "nodeType": "ExpressionStatement",
                   "src": "767:30:25"
                 }
               ]
             },
-            "id": 4882,
+            "id": 4894,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
@@ -7967,17 +7967,17 @@
             "nameLocation": "-1:-1:-1",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4867,
+              "id": 4879,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4864,
+                  "id": 4876,
                   "mutability": "mutable",
                   "name": "_drexToken",
                   "nameLocation": "683:10:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4882,
+                  "scope": 4894,
                   "src": "675:18:25",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -7986,7 +7986,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4863,
+                    "id": 4875,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "675:7:25",
@@ -8000,12 +8000,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 4866,
+                  "id": 4878,
                   "mutability": "mutable",
                   "name": "_tpftToken",
                   "nameLocation": "703:10:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4882,
+                  "scope": 4894,
                   "src": "695:18:25",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -8014,7 +8014,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4865,
+                    "id": 4877,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "695:7:25",
@@ -8030,12 +8030,12 @@
               "src": "674:40:25"
             },
             "returnParameters": {
-              "id": 4868,
+              "id": 4880,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "715:0:25"
             },
-            "scope": 5004,
+            "scope": 5016,
             "src": "663:142:25",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -8043,7 +8043,7 @@
           },
           {
             "body": {
-              "id": 4944,
+              "id": 4956,
               "nodeType": "Block",
               "src": "938:424:25",
               "statements": [
@@ -8055,7 +8055,7 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 4901,
+                        "id": 4913,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -8064,7 +8064,7 @@
                           "arguments": [
                             {
                               "expression": {
-                                "id": 4897,
+                                "id": 4909,
                                 "name": "msg",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
@@ -8075,7 +8075,7 @@
                                   "typeString": "msg"
                                 }
                               },
-                              "id": 4898,
+                              "id": 4910,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -8098,18 +8098,18 @@
                               }
                             ],
                             "expression": {
-                              "id": 4895,
+                              "id": 4907,
                               "name": "drexToken",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 4836,
+                              "referencedDeclaration": 4848,
                               "src": "957:9:25",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_IERC20_$2546",
                                 "typeString": "contract IERC20"
                               }
                             },
-                            "id": 4896,
+                            "id": 4908,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -8124,7 +8124,7 @@
                               "typeString": "function (address) view external returns (uint256)"
                             }
                           },
-                          "id": 4899,
+                          "id": 4911,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -8143,11 +8143,11 @@
                         "nodeType": "BinaryOperation",
                         "operator": ">=",
                         "rightExpression": {
-                          "id": 4900,
+                          "id": 4912,
                           "name": "quantidadeDrex",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 4886,
+                          "referencedDeclaration": 4898,
                           "src": "992:14:25",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -8162,7 +8162,7 @@
                       },
                       {
                         "hexValue": "4f70657261636f6573436f6d70726f6d697373616461733a2053616c646f20696e737566696369656e74652064652044524558",
-                        "id": 4902,
+                        "id": 4914,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -8188,7 +8188,7 @@
                           "typeString": "literal_string \"OperacoesCompromissadas: Saldo insuficiente de DREX\""
                         }
                       ],
-                      "id": 4894,
+                      "id": 4906,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -8202,7 +8202,7 @@
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 4903,
+                    "id": 4915,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -8218,7 +8218,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 4904,
+                  "id": 4916,
                   "nodeType": "ExpressionStatement",
                   "src": "949:113:25"
                 },
@@ -8227,7 +8227,7 @@
                     "arguments": [
                       {
                         "expression": {
-                          "id": 4908,
+                          "id": 4920,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -8238,7 +8238,7 @@
                             "typeString": "msg"
                           }
                         },
-                        "id": 4909,
+                        "id": 4921,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -8255,14 +8255,14 @@
                       {
                         "arguments": [
                           {
-                            "id": 4912,
+                            "id": 4924,
                             "name": "this",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 4294967268,
                             "src": "1118:4:25",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_OperacoesCompromissadas_$5004",
+                              "typeIdentifier": "t_contract$_OperacoesCompromissadas_$5016",
                               "typeString": "contract OperacoesCompromissadas"
                             }
                           }
@@ -8270,11 +8270,11 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_OperacoesCompromissadas_$5004",
+                              "typeIdentifier": "t_contract$_OperacoesCompromissadas_$5016",
                               "typeString": "contract OperacoesCompromissadas"
                             }
                           ],
-                          "id": 4911,
+                          "id": 4923,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -8286,14 +8286,14 @@
                             "typeString": "type(address)"
                           },
                           "typeName": {
-                            "id": 4910,
+                            "id": 4922,
                             "name": "address",
                             "nodeType": "ElementaryTypeName",
                             "src": "1110:7:25",
                             "typeDescriptions": {}
                           }
                         },
-                        "id": 4913,
+                        "id": 4925,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -8310,11 +8310,11 @@
                         }
                       },
                       {
-                        "id": 4914,
+                        "id": 4926,
                         "name": "quantidadeDrex",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4886,
+                        "referencedDeclaration": 4898,
                         "src": "1125:14:25",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -8338,18 +8338,18 @@
                         }
                       ],
                       "expression": {
-                        "id": 4905,
+                        "id": 4917,
                         "name": "drexToken",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4836,
+                        "referencedDeclaration": 4848,
                         "src": "1075:9:25",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_IERC20_$2546",
                           "typeString": "contract IERC20"
                         }
                       },
-                      "id": 4907,
+                      "id": 4919,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -8364,7 +8364,7 @@
                         "typeString": "function (address,address,uint256) external returns (bool)"
                       }
                     },
-                    "id": 4915,
+                    "id": 4927,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -8380,7 +8380,7 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 4916,
+                  "id": 4928,
                   "nodeType": "ExpressionStatement",
                   "src": "1075:65:25"
                 },
@@ -8388,11 +8388,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 4920,
+                        "id": 4932,
                         "name": "tomador",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4884,
+                        "referencedDeclaration": 4896,
                         "src": "1174:7:25",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -8402,14 +8402,14 @@
                       {
                         "arguments": [
                           {
-                            "id": 4923,
+                            "id": 4935,
                             "name": "this",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 4294967268,
                             "src": "1191:4:25",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_OperacoesCompromissadas_$5004",
+                              "typeIdentifier": "t_contract$_OperacoesCompromissadas_$5016",
                               "typeString": "contract OperacoesCompromissadas"
                             }
                           }
@@ -8417,11 +8417,11 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_OperacoesCompromissadas_$5004",
+                              "typeIdentifier": "t_contract$_OperacoesCompromissadas_$5016",
                               "typeString": "contract OperacoesCompromissadas"
                             }
                           ],
-                          "id": 4922,
+                          "id": 4934,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -8433,14 +8433,14 @@
                             "typeString": "type(address)"
                           },
                           "typeName": {
-                            "id": 4921,
+                            "id": 4933,
                             "name": "address",
                             "nodeType": "ElementaryTypeName",
                             "src": "1183:7:25",
                             "typeDescriptions": {}
                           }
                         },
-                        "id": 4924,
+                        "id": 4936,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -8457,11 +8457,11 @@
                         }
                       },
                       {
-                        "id": 4925,
+                        "id": 4937,
                         "name": "quantidadeTpft",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4888,
+                        "referencedDeclaration": 4900,
                         "src": "1198:14:25",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -8485,18 +8485,18 @@
                         }
                       ],
                       "expression": {
-                        "id": 4917,
+                        "id": 4929,
                         "name": "tpftToken",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4839,
+                        "referencedDeclaration": 4851,
                         "src": "1151:9:25",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_IERC20_$2546",
                           "typeString": "contract IERC20"
                         }
                       },
-                      "id": 4919,
+                      "id": 4931,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -8511,7 +8511,7 @@
                         "typeString": "function (address,address,uint256) external returns (bool)"
                       }
                     },
-                    "id": 4926,
+                    "id": 4938,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -8527,37 +8527,37 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 4927,
+                  "id": 4939,
                   "nodeType": "ExpressionStatement",
                   "src": "1151:62:25"
                 },
                 {
                   "expression": {
-                    "id": 4939,
+                    "id": 4951,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "baseExpression": {
-                        "id": 4928,
+                        "id": 4940,
                         "name": "operacoes",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4855,
+                        "referencedDeclaration": 4867,
                         "src": "1226:9:25",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Operacao_$4850_storage_$",
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Operacao_$4862_storage_$",
                           "typeString": "mapping(uint256 => struct OperacoesCompromissadas.Operacao storage ref)"
                         }
                       },
-                      "id": 4930,
+                      "id": 4942,
                       "indexExpression": {
-                        "id": 4929,
+                        "id": 4941,
                         "name": "proximaOperacaoId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4857,
+                        "referencedDeclaration": 4869,
                         "src": "1236:17:25",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -8571,7 +8571,7 @@
                       "nodeType": "IndexAccess",
                       "src": "1226:28:25",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Operacao_$4850_storage",
+                        "typeIdentifier": "t_struct$_Operacao_$4862_storage",
                         "typeString": "struct OperacoesCompromissadas.Operacao storage ref"
                       }
                     },
@@ -8581,7 +8581,7 @@
                       "arguments": [
                         {
                           "expression": {
-                            "id": 4932,
+                            "id": 4944,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
@@ -8592,7 +8592,7 @@
                               "typeString": "msg"
                             }
                           },
-                          "id": 4933,
+                          "id": 4945,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -8607,11 +8607,11 @@
                           }
                         },
                         {
-                          "id": 4934,
+                          "id": 4946,
                           "name": "tomador",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 4884,
+                          "referencedDeclaration": 4896,
                           "src": "1278:7:25",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -8619,11 +8619,11 @@
                           }
                         },
                         {
-                          "id": 4935,
+                          "id": 4947,
                           "name": "quantidadeDrex",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 4886,
+                          "referencedDeclaration": 4898,
                           "src": "1287:14:25",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -8631,11 +8631,11 @@
                           }
                         },
                         {
-                          "id": 4936,
+                          "id": 4948,
                           "name": "quantidadeTpft",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 4888,
+                          "referencedDeclaration": 4900,
                           "src": "1303:14:25",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -8644,7 +8644,7 @@
                         },
                         {
                           "hexValue": "74727565",
-                          "id": 4937,
+                          "id": 4949,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -8682,18 +8682,18 @@
                             "typeString": "bool"
                           }
                         ],
-                        "id": 4931,
+                        "id": 4943,
                         "name": "Operacao",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4850,
+                        "referencedDeclaration": 4862,
                         "src": "1257:8:25",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_struct$_Operacao_$4850_storage_ptr_$",
+                          "typeIdentifier": "t_type$_t_struct$_Operacao_$4862_storage_ptr_$",
                           "typeString": "type(struct OperacoesCompromissadas.Operacao storage pointer)"
                         }
                       },
-                      "id": 4938,
+                      "id": 4950,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -8705,23 +8705,23 @@
                       "src": "1257:67:25",
                       "tryCall": false,
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Operacao_$4850_memory_ptr",
+                        "typeIdentifier": "t_struct$_Operacao_$4862_memory_ptr",
                         "typeString": "struct OperacoesCompromissadas.Operacao memory"
                       }
                     },
                     "src": "1226:98:25",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Operacao_$4850_storage",
+                      "typeIdentifier": "t_struct$_Operacao_$4862_storage",
                       "typeString": "struct OperacoesCompromissadas.Operacao storage ref"
                     }
                   },
-                  "id": 4940,
+                  "id": 4952,
                   "nodeType": "ExpressionStatement",
                   "src": "1226:98:25"
                 },
                 {
                   "expression": {
-                    "id": 4942,
+                    "id": 4954,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -8731,11 +8731,11 @@
                     "prefix": false,
                     "src": "1335:19:25",
                     "subExpression": {
-                      "id": 4941,
+                      "id": 4953,
                       "name": "proximaOperacaoId",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4857,
+                      "referencedDeclaration": 4869,
                       "src": "1335:17:25",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -8747,25 +8747,25 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 4943,
+                  "id": 4955,
                   "nodeType": "ExpressionStatement",
                   "src": "1335:19:25"
                 }
               ]
             },
             "functionSelector": "1b025f1c",
-            "id": 4945,
+            "id": 4957,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": [
                   {
-                    "id": 4891,
+                    "id": 4903,
                     "name": "PARTICIPANTE_ROLE",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 4862,
+                    "referencedDeclaration": 4874,
                     "src": "919:17:25",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
@@ -8773,10 +8773,10 @@
                     }
                   }
                 ],
-                "id": 4892,
+                "id": 4904,
                 "kind": "modifierInvocation",
                 "modifierName": {
-                  "id": 4890,
+                  "id": 4902,
                   "name": "onlyRole",
                   "nameLocations": [
                     "910:8:25"
@@ -8793,17 +8793,17 @@
             "nameLocation": "822:15:25",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4889,
+              "id": 4901,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4884,
+                  "id": 4896,
                   "mutability": "mutable",
                   "name": "tomador",
                   "nameLocation": "846:7:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4945,
+                  "scope": 4957,
                   "src": "838:15:25",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -8812,7 +8812,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4883,
+                    "id": 4895,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "838:7:25",
@@ -8826,12 +8826,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 4886,
+                  "id": 4898,
                   "mutability": "mutable",
                   "name": "quantidadeDrex",
                   "nameLocation": "863:14:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4945,
+                  "scope": 4957,
                   "src": "855:22:25",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -8840,7 +8840,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4885,
+                    "id": 4897,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "855:7:25",
@@ -8853,12 +8853,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 4888,
+                  "id": 4900,
                   "mutability": "mutable",
                   "name": "quantidadeTpft",
                   "nameLocation": "887:14:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4945,
+                  "scope": 4957,
                   "src": "879:22:25",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -8867,7 +8867,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4887,
+                    "id": 4899,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "879:7:25",
@@ -8882,12 +8882,12 @@
               "src": "837:65:25"
             },
             "returnParameters": {
-              "id": 4893,
+              "id": 4905,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "938:0:25"
             },
-            "scope": 5004,
+            "scope": 5016,
             "src": "813:549:25",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -8895,74 +8895,74 @@
           },
           {
             "body": {
-              "id": 5002,
+              "id": 5014,
               "nodeType": "Block",
               "src": "1424:488:25",
               "statements": [
                 {
                   "assignments": [
-                    4952
+                    4964
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4952,
+                      "id": 4964,
                       "mutability": "mutable",
                       "name": "operacao",
                       "nameLocation": "1452:8:25",
                       "nodeType": "VariableDeclaration",
-                      "scope": 5002,
+                      "scope": 5014,
                       "src": "1435:25:25",
                       "stateVariable": false,
                       "storageLocation": "storage",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Operacao_$4850_storage_ptr",
+                        "typeIdentifier": "t_struct$_Operacao_$4862_storage_ptr",
                         "typeString": "struct OperacoesCompromissadas.Operacao"
                       },
                       "typeName": {
-                        "id": 4951,
+                        "id": 4963,
                         "nodeType": "UserDefinedTypeName",
                         "pathNode": {
-                          "id": 4950,
+                          "id": 4962,
                           "name": "Operacao",
                           "nameLocations": [
                             "1435:8:25"
                           ],
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 4850,
+                          "referencedDeclaration": 4862,
                           "src": "1435:8:25"
                         },
-                        "referencedDeclaration": 4850,
+                        "referencedDeclaration": 4862,
                         "src": "1435:8:25",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Operacao_$4850_storage_ptr",
+                          "typeIdentifier": "t_struct$_Operacao_$4862_storage_ptr",
                           "typeString": "struct OperacoesCompromissadas.Operacao"
                         }
                       },
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4956,
+                  "id": 4968,
                   "initialValue": {
                     "baseExpression": {
-                      "id": 4953,
+                      "id": 4965,
                       "name": "operacoes",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4855,
+                      "referencedDeclaration": 4867,
                       "src": "1463:9:25",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Operacao_$4850_storage_$",
+                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Operacao_$4862_storage_$",
                         "typeString": "mapping(uint256 => struct OperacoesCompromissadas.Operacao storage ref)"
                       }
                     },
-                    "id": 4955,
+                    "id": 4967,
                     "indexExpression": {
-                      "id": 4954,
+                      "id": 4966,
                       "name": "operacaoId",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4947,
+                      "referencedDeclaration": 4959,
                       "src": "1473:10:25",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -8976,7 +8976,7 @@
                     "nodeType": "IndexAccess",
                     "src": "1463:21:25",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Operacao_$4850_storage",
+                      "typeIdentifier": "t_struct$_Operacao_$4862_storage",
                       "typeString": "struct OperacoesCompromissadas.Operacao storage ref"
                     }
                   },
@@ -8988,18 +8988,18 @@
                     "arguments": [
                       {
                         "expression": {
-                          "id": 4958,
+                          "id": 4970,
                           "name": "operacao",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 4952,
+                          "referencedDeclaration": 4964,
                           "src": "1505:8:25",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Operacao_$4850_storage_ptr",
+                            "typeIdentifier": "t_struct$_Operacao_$4862_storage_ptr",
                             "typeString": "struct OperacoesCompromissadas.Operacao storage pointer"
                           }
                         },
-                        "id": 4959,
+                        "id": 4971,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
@@ -9007,7 +9007,7 @@
                         "memberLocation": "1514:5:25",
                         "memberName": "ativa",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 4849,
+                        "referencedDeclaration": 4861,
                         "src": "1505:14:25",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
@@ -9016,7 +9016,7 @@
                       },
                       {
                         "hexValue": "4f70657261636f6573436f6d70726f6d697373616461733a204f7065726163616f20696e6174697661206f7520696e6578697374656e7465",
-                        "id": 4960,
+                        "id": 4972,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -9042,7 +9042,7 @@
                           "typeString": "literal_string \"OperacoesCompromissadas: Operacao inativa ou inexistente\""
                         }
                       ],
-                      "id": 4957,
+                      "id": 4969,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -9056,7 +9056,7 @@
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 4961,
+                    "id": 4973,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -9072,7 +9072,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 4962,
+                  "id": 4974,
                   "nodeType": "ExpressionStatement",
                   "src": "1497:83:25"
                 },
@@ -9084,7 +9084,7 @@
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
                         },
-                        "id": 4974,
+                        "id": 4986,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -9094,25 +9094,25 @@
                             "typeIdentifier": "t_address",
                             "typeString": "address"
                           },
-                          "id": 4968,
+                          "id": 4980,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "leftExpression": {
                             "expression": {
-                              "id": 4964,
+                              "id": 4976,
                               "name": "operacao",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 4952,
+                              "referencedDeclaration": 4964,
                               "src": "1599:8:25",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_Operacao_$4850_storage_ptr",
+                                "typeIdentifier": "t_struct$_Operacao_$4862_storage_ptr",
                                 "typeString": "struct OperacoesCompromissadas.Operacao storage pointer"
                               }
                             },
-                            "id": 4965,
+                            "id": 4977,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
@@ -9120,7 +9120,7 @@
                             "memberLocation": "1608:11:25",
                             "memberName": "emprestador",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 4841,
+                            "referencedDeclaration": 4853,
                             "src": "1599:20:25",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
@@ -9131,7 +9131,7 @@
                           "operator": "==",
                           "rightExpression": {
                             "expression": {
-                              "id": 4966,
+                              "id": 4978,
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
@@ -9142,7 +9142,7 @@
                                 "typeString": "msg"
                               }
                             },
-                            "id": 4967,
+                            "id": 4979,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -9169,25 +9169,25 @@
                             "typeIdentifier": "t_address",
                             "typeString": "address"
                           },
-                          "id": 4973,
+                          "id": 4985,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "leftExpression": {
                             "expression": {
-                              "id": 4969,
+                              "id": 4981,
                               "name": "operacao",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 4952,
+                              "referencedDeclaration": 4964,
                               "src": "1637:8:25",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_Operacao_$4850_storage_ptr",
+                                "typeIdentifier": "t_struct$_Operacao_$4862_storage_ptr",
                                 "typeString": "struct OperacoesCompromissadas.Operacao storage pointer"
                               }
                             },
-                            "id": 4970,
+                            "id": 4982,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
@@ -9195,7 +9195,7 @@
                             "memberLocation": "1646:7:25",
                             "memberName": "tomador",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 4843,
+                            "referencedDeclaration": 4855,
                             "src": "1637:16:25",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
@@ -9206,7 +9206,7 @@
                           "operator": "==",
                           "rightExpression": {
                             "expression": {
-                              "id": 4971,
+                              "id": 4983,
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
@@ -9217,7 +9217,7 @@
                                 "typeString": "msg"
                               }
                             },
-                            "id": 4972,
+                            "id": 4984,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -9245,7 +9245,7 @@
                       },
                       {
                         "hexValue": "4f70657261636f6573436f6d70726f6d697373616461733a204e616f206175746f72697a61646f",
-                        "id": 4975,
+                        "id": 4987,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -9271,7 +9271,7 @@
                           "typeString": "literal_string \"OperacoesCompromissadas: Nao autorizado\""
                         }
                       ],
-                      "id": 4963,
+                      "id": 4975,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -9285,7 +9285,7 @@
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 4976,
+                    "id": 4988,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -9301,7 +9301,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 4977,
+                  "id": 4989,
                   "nodeType": "ExpressionStatement",
                   "src": "1591:120:25"
                 },
@@ -9310,18 +9310,18 @@
                     "arguments": [
                       {
                         "expression": {
-                          "id": 4981,
+                          "id": 4993,
                           "name": "operacao",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 4952,
+                          "referencedDeclaration": 4964,
                           "src": "1743:8:25",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Operacao_$4850_storage_ptr",
+                            "typeIdentifier": "t_struct$_Operacao_$4862_storage_ptr",
                             "typeString": "struct OperacoesCompromissadas.Operacao storage pointer"
                           }
                         },
-                        "id": 4982,
+                        "id": 4994,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
@@ -9329,7 +9329,7 @@
                         "memberLocation": "1752:7:25",
                         "memberName": "tomador",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 4843,
+                        "referencedDeclaration": 4855,
                         "src": "1743:16:25",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -9338,18 +9338,18 @@
                       },
                       {
                         "expression": {
-                          "id": 4983,
+                          "id": 4995,
                           "name": "operacao",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 4952,
+                          "referencedDeclaration": 4964,
                           "src": "1761:8:25",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Operacao_$4850_storage_ptr",
+                            "typeIdentifier": "t_struct$_Operacao_$4862_storage_ptr",
                             "typeString": "struct OperacoesCompromissadas.Operacao storage pointer"
                           }
                         },
-                        "id": 4984,
+                        "id": 4996,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
@@ -9357,7 +9357,7 @@
                         "memberLocation": "1770:14:25",
                         "memberName": "quantidadeDrex",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 4845,
+                        "referencedDeclaration": 4857,
                         "src": "1761:23:25",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -9377,18 +9377,18 @@
                         }
                       ],
                       "expression": {
-                        "id": 4978,
+                        "id": 4990,
                         "name": "drexToken",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4836,
+                        "referencedDeclaration": 4848,
                         "src": "1724:9:25",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_IERC20_$2546",
                           "typeString": "contract IERC20"
                         }
                       },
-                      "id": 4980,
+                      "id": 4992,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -9403,7 +9403,7 @@
                         "typeString": "function (address,uint256) external returns (bool)"
                       }
                     },
-                    "id": 4985,
+                    "id": 4997,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -9419,7 +9419,7 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 4986,
+                  "id": 4998,
                   "nodeType": "ExpressionStatement",
                   "src": "1724:61:25"
                 },
@@ -9428,18 +9428,18 @@
                     "arguments": [
                       {
                         "expression": {
-                          "id": 4990,
+                          "id": 5002,
                           "name": "operacao",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 4952,
+                          "referencedDeclaration": 4964,
                           "src": "1815:8:25",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Operacao_$4850_storage_ptr",
+                            "typeIdentifier": "t_struct$_Operacao_$4862_storage_ptr",
                             "typeString": "struct OperacoesCompromissadas.Operacao storage pointer"
                           }
                         },
-                        "id": 4991,
+                        "id": 5003,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
@@ -9447,7 +9447,7 @@
                         "memberLocation": "1824:11:25",
                         "memberName": "emprestador",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 4841,
+                        "referencedDeclaration": 4853,
                         "src": "1815:20:25",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -9456,18 +9456,18 @@
                       },
                       {
                         "expression": {
-                          "id": 4992,
+                          "id": 5004,
                           "name": "operacao",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 4952,
+                          "referencedDeclaration": 4964,
                           "src": "1837:8:25",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Operacao_$4850_storage_ptr",
+                            "typeIdentifier": "t_struct$_Operacao_$4862_storage_ptr",
                             "typeString": "struct OperacoesCompromissadas.Operacao storage pointer"
                           }
                         },
-                        "id": 4993,
+                        "id": 5005,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
@@ -9475,7 +9475,7 @@
                         "memberLocation": "1846:14:25",
                         "memberName": "quantidadeTpft",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 4847,
+                        "referencedDeclaration": 4859,
                         "src": "1837:23:25",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -9495,18 +9495,18 @@
                         }
                       ],
                       "expression": {
-                        "id": 4987,
+                        "id": 4999,
                         "name": "tpftToken",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4839,
+                        "referencedDeclaration": 4851,
                         "src": "1796:9:25",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_IERC20_$2546",
                           "typeString": "contract IERC20"
                         }
                       },
-                      "id": 4989,
+                      "id": 5001,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -9521,7 +9521,7 @@
                         "typeString": "function (address,uint256) external returns (bool)"
                       }
                     },
-                    "id": 4994,
+                    "id": 5006,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -9537,31 +9537,31 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 4995,
+                  "id": 5007,
                   "nodeType": "ExpressionStatement",
                   "src": "1796:65:25"
                 },
                 {
                   "expression": {
-                    "id": 5000,
+                    "id": 5012,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "expression": {
-                        "id": 4996,
+                        "id": 5008,
                         "name": "operacao",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4952,
+                        "referencedDeclaration": 4964,
                         "src": "1882:8:25",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Operacao_$4850_storage_ptr",
+                          "typeIdentifier": "t_struct$_Operacao_$4862_storage_ptr",
                           "typeString": "struct OperacoesCompromissadas.Operacao storage pointer"
                         }
                       },
-                      "id": 4998,
+                      "id": 5010,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -9569,7 +9569,7 @@
                       "memberLocation": "1891:5:25",
                       "memberName": "ativa",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4849,
+                      "referencedDeclaration": 4861,
                       "src": "1882:14:25",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -9580,7 +9580,7 @@
                     "operator": "=",
                     "rightHandSide": {
                       "hexValue": "66616c7365",
-                      "id": 4999,
+                      "id": 5011,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -9600,14 +9600,14 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 5001,
+                  "id": 5013,
                   "nodeType": "ExpressionStatement",
                   "src": "1882:22:25"
                 }
               ]
             },
             "functionSelector": "903aad85",
-            "id": 5003,
+            "id": 5015,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -9615,17 +9615,17 @@
             "nameLocation": "1379:17:25",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4948,
+              "id": 4960,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4947,
+                  "id": 4959,
                   "mutability": "mutable",
                   "name": "operacaoId",
                   "nameLocation": "1405:10:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5003,
+                  "scope": 5015,
                   "src": "1397:18:25",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -9634,7 +9634,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4946,
+                    "id": 4958,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1397:7:25",
@@ -9649,19 +9649,19 @@
               "src": "1396:20:25"
             },
             "returnParameters": {
-              "id": 4949,
+              "id": 4961,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1424:0:25"
             },
-            "scope": 5004,
+            "scope": 5016,
             "src": "1370:542:25",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 5005,
+        "scope": 5017,
         "src": "189:1728:25",
         "usedErrors": [
           363,
@@ -9682,7 +9682,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.16",
-  "updatedAt": "2023-12-04T21:21:11.496Z",
+  "updatedAt": "2023-12-04T22:31:31.437Z",
   "devdoc": {
     "errors": {
       "AccessControlBadConfirmation()": [

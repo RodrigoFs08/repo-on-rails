@@ -2,7 +2,7 @@ require "eth"
 
 class RepoTransactionMonitor
   def initialize(contract_address)
-    @client = Eth::Client.create(ENV["DEV_BLOCKCHAIN_HOST"]) # URL do Ganache
+    @client = Eth::Client.create(ENV["DEV_BLOCKCHAIN_HOST"])
     @contract_address = contract_address
     contract_abi = ContractService.get_abi("STR")
     contract_name = "STR"
@@ -11,9 +11,7 @@ class RepoTransactionMonitor
 
   def check_new_transactions
     latest_block = @client.eth_block_number["result"].to_i(16)
-    puts latest_block
-    # Supondo que você armazena o último bloco verificado em algum lugar
-    last_checked_block = 0
+    last_checked_block = latest_block - 5
     (last_checked_block + 1).upto(latest_block) do |block_number|
       block = @client.eth_get_block_by_number(block_number, true)
       process_transactions(block["result"]["transactions"], block["result"])
@@ -23,7 +21,6 @@ class RepoTransactionMonitor
   private
 
   def process_transactions(transactions, block)
-    # puts transactions
     transactions.each do |tx|
       next unless tx["to"]&.downcase == @contract_address.downcase
       # Processar transação
@@ -40,7 +37,7 @@ class RepoTransactionMonitor
       event_abi = @contract.abi.find { |a| a["name"] == "criarOperacaoCompromissada" }
       event_inputs = event_abi["inputs"].map { |i| i["type"] }
       decoded_params = Eth::Abi.decode(event_inputs, raw_params)
-      puts Time.at(block_timestamp).to_datetime
+      puts "Salvando transação encontrada no bloco #{block["number"]}"
 
       ExchangeTransaction.find_or_create_by!(
         drex_amount: decoded_params[0],
@@ -48,15 +45,10 @@ class RepoTransactionMonitor
         tpft_amount: decoded_params[2],
         from_address: decoded_params[3],
         to_address: decoded_params[4],
-        timestamp: Time.at(block_timestamp).to_datetime, # Ou a data e hora apropriada
+        timestamp: Time.at(block_timestamp).to_datetime,
       )
     rescue => e
-      puts "Erro ao processar a transação: #{e.message}"
-
-      # # Decodificar os parâmetros com base nos tipos
-      # # A ordem e os tipos devem corresponder à assinatura da função
-      # types = ["uint256", "uint256", "uint256", "address", "address", "uint256", "uint256"]
-      # puts Eth::Abi.decode(types, tx_input)
+      puts "Não acho transações no bloco #{block["number"]}"
     end
   end
 end
