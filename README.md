@@ -1,4 +1,4 @@
-# Repo On Rails
+# Repo On Rails  - Operações Compromissadas na Web 3
 
 O projeto "Repo on Rails - Operações Compromissadas na Web 3" é uma aplicação desenvolvida em Ruby on Rails que gerencia carteiras de Ethereum e interage com contratos inteligentes. O projeto utiliza a ferramenta Truffle para a implantação de contratos com testes automatizados e consiste em quatro Smart Contracts principais:
 
