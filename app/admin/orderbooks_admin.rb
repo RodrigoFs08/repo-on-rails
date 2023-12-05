@@ -95,9 +95,12 @@ Trestle.resource(:orderbooks) do
       order.tomador = tomador.id
       order.fechado = true
       order.blockchain_tx = repo
-      order.save!
-
-      flash[:message] = "Proposta aceita com sucesso"
+      if order.blockchain_tx.present?
+        order.save!
+        flash[:message] = "Proposta aceita com sucesso"
+        orderbooks_admin_index_path
+      end
+      flash[:error] = "Falha na transação"
       redirect_to orderbooks_admin_index_path
     end
   end

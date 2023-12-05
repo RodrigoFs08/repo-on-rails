@@ -14,7 +14,7 @@ Um aspecto notável do projeto é o desenvolvimento de um marketplace para a pro
 
 
 <p align="center">
-  <img src="https://i.ibb.co/fkpx6B1/Diagrama-sem-nome-drawio.png" width="600">
+  <img src="https://i.ibb.co/nr4P3B8/Diagrama.png" width="600">
 </p>
 
 <p align="center">
@@ -23,14 +23,13 @@ Um aspecto notável do projeto é o desenvolvimento de um marketplace para a pro
 
 ## Smart Contracts (Rede de testes Ethereum Sepolia)
 
-colocar link para o etherscan dos contratos
+- [DREXToken - 0xdF2a260e686E615adCcBc6dB585a0b444a67C0a2](https://sepolia.etherscan.io/address/0xC7b997B51A1c7C3e2468075e51EC034E036e424C)
+- [TPFtToken - 0xbFd94123632BcC1b389f1a12541D6d3c76bae729](https://sepolia.etherscan.io/address/0xf663b153Ba7dA589bE7bF40B939b9a166C994AA2)
+- [ExchangeContract - 0xeEAF1002AfA91A80b5c4794A64a28F2CdED8c553](https://sepolia.etherscan.io/address/0x960708E3E4aF151F4Abc62E0f668Faeed229d8d0)
+- [STR - 0xBcA68b7edb94d73402B32C3EF9E57a992a97b554](https://sepolia.etherscan.io/address/0x890300ddB65Fc3f7094006C2cA75f8651a5A9B30)
 
-DREXToken - 0xC7b997B51A1c7C3e2468075e51EC034E036e424C
-TPFtToken - 0xf663b153Ba7dA589bE7bF40B939b9a166C994AA2
-ExchangeContract - 0x960708E3E4aF151F4Abc62E0f668Faeed229d8d0
-STR - 0x890300ddB65Fc3f7094006C2cA75f8651a5A9B30
+- [Chainlink Automation - 0x315972edefc2842a05679e2c78f0d9060127490a](https://sepolia.etherscan.io/address/0x890300ddB65Fc3f7094006C2cA75f8651a5A9B30)
 
-Chainlink Automation Cron - 
 
 ## Pré-requisitos
 
@@ -139,7 +138,7 @@ Antes de começar, certifique-se de ter instalado:
 - Navegue até a interface do aplicativo para testar as funcionalidades e interações com os contratos inteligentes.
 - Para rodar o monitor de transações, digite `rake monitor:transactions`.
 
-## Simulador de Compromissadas
+## Simulador de Compromissadas e algoritmo de otimização de compromissadas
 O código SIMULADOR-COMPROMISSADA simula transações bancárias entre diferentes tipos de bancos e movimentos de mercado. Ele realiza as seguintes etapas:
 
 1. **Definição de Datas e Feriados:** Define um intervalo de datas e uma lista de feriados.
@@ -152,7 +151,8 @@ O código SIMULADOR-COMPROMISSADA simula transações bancárias entre diferente
 
 5. **Exportação de Dados:** Gera DataFrames do Pandas e os exporta para arquivos Excel, registrando transações de compromissadas, saldos diários dos bancos e movimentações internas de zeragem.
 
-Esse código foi desenvolvido para simularmos o ambiente das operações compromissadas para termos dados de teste e maior clareza dos tipos de dados.
+Este código foi especialmente desenvolvido para criar uma simulação detalhada do ambiente de operações compromissadas, permitindo assim a geração de dados de teste robustos e proporcionando uma visão mais clara e precisa dos tipos de dados envolvidos. Além disso, este código serve como a base para a extração e refinamento do algoritmo de otimização, que é um componente crucial do nosso sistema, garantindo a eficiência e eficácia das operações compromissadas.
+
 ## Licença
 
 MIT License
