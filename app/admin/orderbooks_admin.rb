@@ -5,7 +5,11 @@ Trestle.resource(:orderbooks) do
 
   build_instance do |attrs, params|
     instance = model.new(attrs)
-    instance.lancador = current_user.id if params["action"] == "new"
+    if current_user.email != "admin@bc.com.br" && current_user.email != "stn@gov.com.br"
+      instance.lancador = current_user.id if params["action"] == "new"
+    else
+      instance.lancador = nil if params["action"] == "new"
+    end
     instance
   end
 
@@ -31,7 +35,7 @@ Trestle.resource(:orderbooks) do
       end
     end
     actions do |toolbar, instance, admin|
-      if !instance.fechado? && current_user.id != instance.lancador
+      if !instance.fechado? && current_user.id != instance.lancador && current_user.email != "admin@bc.com.br" && current_user.email != "stn@gov.com.br"
         toolbar.link("Aprovar Proposta", approve_orderbooks_admin_path(instance), title: "Aprovar Proposta", data: { toggle: "confirm", placement: "left" }, style: :info, icon: "fa fa-thumbs-o-up")
       end
     end
