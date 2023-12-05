@@ -99,7 +99,6 @@ Antes de começar, certifique-se de ter instalado:
 - Se estiver testando na rede Sepolia, distribua ETH para todas as carteiras necessárias conforme definido no seu ambiente.
 
 
-
 ## Configuração do Projeto Rails
 
 ### 1. Instalar Dependências:
@@ -120,6 +119,7 @@ Antes de começar, certifique-se de ter instalado:
 
 ### 3. Criar Usuários e Carteiras:
 - Para inicializar usuários e carteiras, execute `rails db:seed`. Ao criar um usuário é gerado um par de address e private_key.
+- A senha padrão para todos os usuários é: `admin`
 
 ## Implantação dos Contratos Inteligentes com Truffle
 
