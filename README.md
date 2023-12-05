@@ -6,7 +6,7 @@ O projeto "Repo on Rails – Tecnologia e Confiança: Simplicidade, Automatizaç
 2.	`DREX` (Digital Real ERC20): Simula o Real Digital no padrão ERC20.
 3.	`Tpft` (Token de Título Público ERC1155): Representa os títulos públicos no padrão ERC1155.
 4.	`ExchangeContract`: Facilita a troca entre DREX e Tpft.
-
+5.	`Chainlink Automation (Oráculo)`: Este contrato inteligente funciona como um oráculo automatizado que desempenha um papel crucial no monitoramento diário das operações compromissadas gerenciadas pelo contrato STR. Ele é especialmente programado para identificar operações que estão próximas do vencimento. No dia específico do vencimento de uma operação compromissada, o oráculo ativa automaticamente o processo de recompra, garantindo a execução pontual e eficiente das obrigações contratuais.
 
 Além disso, o sistema inclui uma tarefa 'rake' que lê blocos da blockchain e procura por transações de operações compromissadas que ocorreram no ambiente.
 
@@ -14,7 +14,7 @@ Um aspecto notável do projeto é o desenvolvimento de um marketplace para a pro
 
 
 <p align="center">
-  <img src="https://i.ibb.co/nr4P3B8/Diagrama.png" width="600">
+  <img src="https://i.ibb.co/xS4RBJb/Diagrama.png" width="600">
 </p>
 
 <p align="center">
@@ -138,7 +138,7 @@ Antes de começar, certifique-se de ter instalado:
 - Navegue até a interface do aplicativo para testar as funcionalidades e interações com os contratos inteligentes.
 - Para rodar o monitor de transações, digite `rake monitor:transactions`.
 
-## Simulador de Compromissadas e algoritmo de otimização de compromissadas
+## Simulador de Compromissadas e algoritmo de otimização
 O código SIMULADOR-COMPROMISSADA simula transações bancárias entre diferentes tipos de bancos e movimentos de mercado. Ele realiza as seguintes etapas:
 
 1. **Definição de Datas e Feriados:** Define um intervalo de datas e uma lista de feriados.
