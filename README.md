@@ -26,7 +26,7 @@ Além disso, a aplicação incorpora gems especializadas para aprimorar sua func
 
 Além disso, o sistema inclui uma tarefa 'rake' que lê blocos da blockchain e procura por transações de operações compromissadas que ocorreram no ambiente.
 
-Um aspecto notável do projeto é o desenvolvimento de um marketplace para a proposta de operações compromissadas. No final de cada janela de operações, se houver participantes que necessitem de liquidação (zeragem do caixa), um algoritmo de zeragem é acionado automaticamente para montar operações compromissadas. Dessa forma, existem dois cenários para as operações: um manual, através de propostas e aceites, e outro automatizado. Ambos os cenários lançam as propostas na web por meio do contrato STR.
+Um aspecto notável do projeto é o desenvolvimento de um marketplace para a proposta de operações compromissadas. No final de cada janela de operações, se houver participantes que necessitem de liquidação (zeragem do caixa), um algoritmo de otimização é acionado automaticamente para montar operações compromissadas. Dessa forma, existem dois cenários para as operações: um manual, através de propostas e aceites, e outro automatizado. Ambos os cenários lançam as propostas na web por meio do contrato STR.
 
 Combinando essas tecnologias avançadas, "Repo on Rails" estabelece uma base sólida para um mercado de operações compromissadas tokenizadas, caracterizado por sua simplicidade, automação e inteligência estratégica.
 
@@ -98,21 +98,7 @@ Antes de começar, certifique-se de ter instalado:
 ### 3. Distribuição de ETH para Testes na Rede Sepolia (Se Aplicável):
 - Se estiver testando na rede Sepolia, distribua ETH para todas as carteiras necessárias conforme definido no seu ambiente.
 
-## Implantação dos Contratos Inteligentes com Truffle
 
-### 1. Compilar os Contratos:
-
-- Instale as dependências do projeto Truffle:
-
-`npm install`
-
-- Navegue até o diretório do projeto (`truffle_project`, na raiz do projeto) e execute `truffle compile`.
-
-### 2. Migrar os Contratos:
-- Para implantar os contratos na sua rede de testes (Ganache ou Sepolia), execute `truffle migrate`.
-
-### 3. Testes Automatizados:
-- Para executar os testes automatizados dos contratos, utilize `truffle test`.
 
 ## Configuração do Projeto Rails
 
@@ -133,10 +119,28 @@ Antes de começar, certifique-se de ter instalado:
     private_key_encryption_key: <chave_gerada>
 
 ### 3. Criar Usuários e Carteiras:
-- Para inicializar usuários e carteiras, execute `rails db:seed`.
+- Para inicializar usuários e carteiras, execute `rails db:seed`. Ao criar um usuário é gerado um par de address e private_key.
+
+## Implantação dos Contratos Inteligentes com Truffle
+
+### 1. Compilar os Contratos:
+
+- Instale as dependências do projeto Truffle:
+
+`npm install`
+
+- Navegue até o diretório do projeto (`truffle_project`, na raiz do projeto) e execute `truffle compile`.
+
+### 2. Migrar os Contratos:
+- Em `truffle-config` colocar a chave privada do Banco Central. Conseguimos obter a chave navegando no console do Rails `rails console`.
+- Para implantar os contratos na sua rede de testes (Ganache ou Sepolia), execute `truffle migrate`.
+- Após implantar os contratos, atualize os endereços de cada um no `.env`.
+
+
+### 3. Testes Automatizados:
+- Para executar os testes automatizados dos contratos, utilize `truffle test`.
 
 ### 4. Finalizar Configuração Inicial:
-- Após implantar os contratos, atualize os endereços de cada um no `.env`.
 - Execute `rails db:seed` novamente para rodar as configurações iniciais do projeto (adicionar participantes, dar as devidas autorizações, etc).
 
 ## Execução e Testes do Aplicativo

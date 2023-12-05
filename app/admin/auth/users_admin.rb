@@ -3,7 +3,6 @@ Trestle.resource(:users, model: User, scope: Auth) do
     item :users, icon: "fas fa-users", label: "Minhas Informações", priority: 0
   end
 
-  # Utilize o escopo definido
   collection do
     if current_user.email == "admin@bc.com.br"
       User.all
