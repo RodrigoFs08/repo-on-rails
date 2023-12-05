@@ -64,6 +64,7 @@ Trestle.resource(:orderbooks) do
       lancador = User.find_by id: order.lancador
       tomador = User.find_by id: current_user.id
 
+      #preço e tipo de titulos mocados para exemplificar
       preco_titulo = 1042.52
       tpft_token_id = 1
 
@@ -72,8 +73,8 @@ Trestle.resource(:orderbooks) do
       valor_neg_drex = order.quantidade * preco_titulo * 10 ** 18
 
       vencimento_timestamp = order.vencimento.to_time.to_i
-
-      taxa_cdi = 13.1
+      #taxa mocada para exemplificar
+      taxa_cdi = 13.1 
       taxa = taxa_cdi * order.taxa
 
       if order.tipo_lancamento == "compra"

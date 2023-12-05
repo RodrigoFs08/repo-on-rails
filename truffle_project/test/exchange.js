@@ -13,7 +13,6 @@ contract("ExchangeContract", accounts => {
     await exchangeContract.setAuthorizedWallet(bancoCentral);
 
 
-    // Suponha que o tokenID 1 é um token fungível dentro do seu contrato ERC1155
     const tpftTokenId = 1;
     const data = web3.utils.asciiToHex("preço:1000");
 
